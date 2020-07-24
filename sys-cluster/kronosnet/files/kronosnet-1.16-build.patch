@@ -1,0 +1,12 @@
+diff -Naur kronosnet-1.16.orig/configure.ac kronosnet-1.16/configure.ac
+--- kronosnet-1.16.orig/configure.ac	2020-07-13 19:39:00.777407643 +0200
++++ kronosnet-1.16/configure.ac	2020-07-13 19:40:05.569246373 +0200
+@@ -288,6 +288,8 @@
+ 	fi
+ 	AC_SUBST([DOXYGEN2MAN])
+ 	AM_CONDITIONAL([BUILD_DOXYXML], [test "x$build_doxy" = "xyes"])
++else
++	AM_CONDITIONAL([BUILD_DOXYXML], [false])
+ fi
+ 
+ # checks for libnozzle
