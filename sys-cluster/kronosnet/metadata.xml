@@ -4,4 +4,9 @@
 	<upstream>
 		<remote-id type="github">kronosnet/kronosnet</remote-id>
 	</upstream>
+	<use>
+		<flag name="nss">Add support for tls via nss</flag>
+		<flag name="openssl">Add support for tls via openssl</flag>
+		<flag name="lzo2">Add support for lzo2 compression</flag>
+	</use>
 </pkgmetadata>
